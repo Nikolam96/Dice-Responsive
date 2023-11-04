@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'roboto_slabregular';
+}
+
+/* Header */
+
+.header {
+    width: 800px;
+}
+
+/* Dice */
+
+article {
+    background-color: #ecf0f1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-auto-rows: 200px;
+    gap: 50px;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.item {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.black-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+
+}
+
+.red-circle {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* Likes and Profiles */
+
+section {
+    display: flex;
+    padding: 30px 0px;
+    flex-wrap: wrap;    
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-right: 15px;
+}
+
+.heart {
+    width: 40px;
+}
+
+.person {
+    display: flex;
+}
+
+.profile {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 55px;
+}
+
+.profile1 {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 55px;
+    margin-left: -15px;
+}
+
+.text {
+    color: rgb(152, 151, 151);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-size: 1.8em;
+    padding-left: 30px;
+    font-weight: 100;
+}
+
+/* Footer */
+
+footer {
+    font-size: 1.2em;
+    padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .header {
+        width:600px;
+    }
+
+    footer {
+        font-size: 1.1em;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+    .header {
+        width:300px;
+    }
+
+    section {
+        gap: 20px;
+        padding: 20px 0px;
+    }
+
+    .picture {
+        padding-right: 0px;
+    }
+    
+    .text {
+        display: none;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
